@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './variables';
+
+:root {
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    
+  }
+}
+
+// TYPOGRAPHY
+// Import fonts
+@font-face {
+  font-family: 'Epilogue';
+  src: url('../public/fonts/Epilogue-Variable.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Epilogue Italic';
+  src: url('../public/fonts/Epilogue-Variable.ttf') format('truetype');
+  font-style: italic;
+}
+
+// Branding guidlines
+// Headings
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+// Paragraphs
+p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p.bolded {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+// Wrap bodies
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+// BODY
+body {
+  font-family: 'Epilogue', sans-serif;
+  color: $text-color;
+}
