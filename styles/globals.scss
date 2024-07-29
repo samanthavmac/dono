@@ -32,31 +32,37 @@
 h1 {
   font-size: 56px;
   font-weight: 700;
+  margin: 0;
 }
 
 h2 {
   font-size: 45px;
   font-weight: 700;
+  margin: 0;
 }
 
 h3 {
   font-size: 36px;
   font-weight: 600;
+  margin: 0;
 }
 
 h4 {
   font-size: 32px;
   font-weight: 600;
+  margin: 0;
 }
 
 h5 {
   font-size: 28px;
   font-weight: 500;
+  margin: 0;
 }
 
 h6 {
   font-size: 24px;
   font-weight: 500;
+  margin: 0;
 }
 
 // Paragraphs
@@ -77,6 +83,24 @@ p.bolded {
     text-wrap: balance;
   }
 }
+
+// BUTTONS
+button {
+  background-color: $btn-dark-background;
+  -webkit-text-fill-color: $btn-dark-text;
+  padding: 15px 25px;
+}
+
+.btn-group {
+  float: left;
+  display: flex;
+  flex-wrap: wrap; 
+  margin-top: 25px;
+  justify-content: center;
+  gap: 25px;
+}
+
+// Hover states
 
 // BODY
 body {
