@@ -16,6 +16,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "lib/adapter.js", "pages/api/auth/[...nextauth].js", "server/db.js", "server/server.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "lib/adapter.ts", "pages/api/auth/[...nextauth].js", "server/db.js", "server/index.js"],
   "exclude": ["node_modules"]
 }

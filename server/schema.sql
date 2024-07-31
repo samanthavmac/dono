@@ -50,4 +50,4 @@ CREATE UNIQUE INDEX session_token ON sessions(session_token);
 
 CREATE UNIQUE INDEX access_token ON sessions(access_token);
 
-CREATE UNIQUE INDEX email ON users(email);
+CREATE UNIQUE INDEX email ON donors(email);
