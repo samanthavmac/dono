@@ -3,10 +3,10 @@ import GoogleProvider from "next-auth/providers/google";
 import PostgresAdapter from "/lib/adapter.ts";
 
 const pool = new Pool({
-	user: "postgres",
-	host: "localhost",
-	database: "postgres",
-	password: "postgres",
+	user: process.env.DB_USER,
+	host: process.env.DB_HOST,
+	database: process.env.DB_NAME,
+	password: process.env.DB_PASSWORD,
 	port: 5432,
 });
 
