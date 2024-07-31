@@ -26,7 +26,7 @@ CREATE TABLE sessions
   PRIMARY KEY (id)
 );
 
-CREATE TABLE users
+CREATE TABLE donors
 (
   id             SERIAL,
   name           VARCHAR(255),
