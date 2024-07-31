@@ -1,18 +1,17 @@
-// src/server.ts
-import express, { Express, Request, Response } from 'express';
-import cors from 'cors';
-import pool from './db'; // Import PostgreSQL pool
-
-const app: Express = express();
-const PORT = process.env.PORT || 5000;
+const express = require("express");
+const app = express();
+const cors = require("cors");
+const pool = require("./db"); // Configures PostgreSQL pool
 
 // Middleware
 app.use(cors());
 app.use(express.json()); // Parse JSON bodies
 
-// Routes
+// ROUTES
 
-// Start server
+
+// Update server
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
 });
