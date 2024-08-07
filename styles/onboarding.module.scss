@@ -1,18 +1,40 @@
+@import "./variables";
+
 .main-center-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    padding: 10vh 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  padding: 10vh 20vw;
 }
 
 .btn-group {
-    justify-content: center;
+  justify-content: center;
 }
 
 .instruction-subtitle {
-    margin: 0 0 25px 0;
+  margin: 0 0 25px 0;
+}
+
+.login-form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.login-form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 2px solid $text-color;
+  border-radius: 100px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin: 10px auto;
+}
+
+.login-form input:focus {
+  border-color: $primary-color;
 }
