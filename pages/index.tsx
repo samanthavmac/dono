@@ -7,8 +7,8 @@ export default function Home() {
       <h1>Make a difference with Dono</h1>
       <p className={styles['instruction-subtitle']}>Connect with volunteer opportunities in your local community. Collect unique badges when you volunteer at a new non-profit, and gain tokens to the Dono store.</p>
       <div className="btn-group">
-        <Link href="/onboarding/donor-account-login"><button>Donor (Volunteer)</button></Link>
-        <button>Donee (Registered non-profit)</button>
+        <Link href="/donor/account-login"><button>Donor (Volunteer)</button></Link>
+        <Link href="/donee/account-login"><button>Donee (Registered non-profit)</button></Link>
       </div>
     </div>
   );

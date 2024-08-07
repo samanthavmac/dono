@@ -1,3 +1,5 @@
+import doneeAccountRoutes from './routes/doneeAccount';
+
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -8,7 +10,7 @@ app.use(cors());
 app.use(express.json()); // Parse JSON bodies
 
 // ROUTES
-
+app.use('/api/donees', doneeAccountRoutes);
 
 // Update server
 const PORT = process.env.PORT || 5000;
